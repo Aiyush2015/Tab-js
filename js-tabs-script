@@ -1,0 +1,6 @@
+	// Tabs
+	$( 'ul.tabs li' ).click( function () {
+        let tabID = $( this ).attr( 'data-tab' );
+        $( this ).addClass( 'current' ).siblings('li').removeClass( 'current' );
+        $( `#${tabID}` ).addClass( 'current' ).siblings('.tab-content').removeClass( 'current' );
+    } );
